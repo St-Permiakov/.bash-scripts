@@ -16,13 +16,13 @@ do
 	# Create Component file with default template
 	echo "import React from 'react';
 
-	import styles from './$name.scss';
+import styles from './$name.scss';
 
-	export const $name = () => {
-		return (
-			<div className={styles.root}>Component $name</div>
-		);
-	};" > $path/$name.tsx
+export const $name = () => {
+	return (
+		<div className={styles.root}>Component $name</div>
+	);
+};" > $path/$name.tsx
 	# Create styles module
 	echo ".root {}" > $path/$name.scss
 done
